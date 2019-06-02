@@ -2,7 +2,7 @@
 Automating the completion of CrowdCompass event achievements
 
 
-## Generating Access Token
+## Generating Access Token & UUID
 
 - Log into your CrowdCompass account through the link in your email
 
