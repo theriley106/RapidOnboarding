@@ -30,7 +30,7 @@ def complete_event(trigger, i):
     # Completes each event on the Onboarding achievements page
     data = construct_event_submission_data(trigger, i)
     response = requests.post('https://game.crowdcompass.com/games/E2HnUZ3rp1/players/{}/actions'.format(UUID), headers=headers, data=data)
-    print response.text
+    print(response.text)
 
 
 def get_stats():
