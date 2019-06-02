@@ -8,6 +8,11 @@ Automating the completion of CrowdCompass event achievements
 
 - Turn on the networking debugging tools in your browser (Ctrl + Shift + J)
 
+<p align="center">
+<img src ="static/1.png">
+</p>
+
+
 - Go to: https://event.crowdcompass.com/2019techintern/game/myprogress
 
 - Go to the network request URL starting with: https://game.crowdcompass.com/games/E2HnUZ3rp1/players/
@@ -16,3 +21,6 @@ Automating the completion of CrowdCompass event achievements
 
 - Your Access-Token can be found under the "Request Headers" section for this same network request
 
+<p align="center">
+<img src ="static/3.png">
+</p>
