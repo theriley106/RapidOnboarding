@@ -4,6 +4,8 @@ import random
 
 ACCESS_TOKEN = raw_input("Access Token: ")
 
+UUID = raw_input("UUID: ")
+
 headers = {
     'pragma': 'no-cache',
     'origin': 'https://event.crowdcompass.com',
@@ -27,7 +29,7 @@ def construct_event_submission_data(trigger, i):
 def complete_event(trigger, i):
     # Completes each event on the Onboarding achievements page
     data = construct_event_submission_data(trigger, i)
-    response = requests.post('https://game.crowdcompass.com/games/E2HnUZ3rp1/players/abe6e54c-b445-4e23-ad95-c1be25f9a5e9/actions', headers=headers, data=data)
+    response = requests.post('https://game.crowdcompass.com/games/E2HnUZ3rp1/players/{}/actions'.format(UUID), headers=headers, data=data)
     print response.text
 
 
@@ -36,7 +38,7 @@ def get_stats():
     params = (
         ('_release', '2019050100'),
     )
-    response = requests.get('https://game.crowdcompass.com/games/E2HnUZ3rp1/players/abe6e54c-b445-4e23-ad95-c1be25f9a5e9', headers=headers, params=params)
+    response = requests.get('https://game.crowdcompass.com/games/E2HnUZ3rp1/players/{}'.format(UUID), headers=headers, params=params)
     return response.json()
 
 if __name__ == '__main__':
