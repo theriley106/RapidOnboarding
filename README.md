@@ -1,6 +1,17 @@
 # RapidOnboarding
 Automating the completion of CrowdCompass event achievements
 
+## How To Use
+
+```bash
+$ python main.py
+Access Token: MY_ACCESS_TOKEN
+UUID: MY_UUID
+
+{"score":16700,"awarded_achievements":[]}
+{"score":16700,"awarded_achievements":[]}
+{"score":16700,"awarded_achievements":[]}
+```
 
 ## Generating Access Token & UUID
 
