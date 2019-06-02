@@ -14,3 +14,5 @@ Automating the completion of CrowdCompass event achievements
 
 - Your UUID is the part of URL after "/players/" and before "?_release"
 
+- Your Access-Token can be found under the "Request Headers" section for this same network request
+
